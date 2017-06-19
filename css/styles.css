@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+#slide{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+#slide ul{
+	position: relative;
+	margin: auto;
+	height: auto;
+	width: 400%;
+}
+
+#slide ul li{
+	float: left;
+	width: 25%;
+}
+
+#slide ul li img{
+	width: 100%;
+}
+
+
+
+/****** Media queries *******/
+/*Large Desktop*/
+@media (min-width: 1200px){
+	#slide ul li .caption{
+		position: relative;
+		width: 100%;
+		top:-85px;
+		text-align: center;
+		z-index: 1;
+		color: white;
+	}
+
+	#slide ul li .caption h1{
+		background: rgba(0,0,0,.5);
+		padding: 5px 0;
+	}
+
+	#slide ul li .caption h3{
+		background: rgba(0,0,0,.5);
+		padding-bottom: 10px;
+	}
+
+	#indicator{
+		position: relative;
+		width: 100%;
+		height: 10px;
+		margin: auto;
+		text-align: center;
+		top: -70px;
+	}
+
+	#indicator li{
+		display: inline-block;
+		margin: 0px 5px;
+		cursor: pointer;
+		opacity: .5;
+		color:black;
+		text-shadow: 0px 0px 5px #333;
+	}
+
+	#indicator li:first-child{
+		opacity: 1;
+	}
+	
+	#left{
+		position: absolute;
+		top: 40%;
+		left:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+
+	#right{
+		position: absolute;
+		top: 40%;
+		right:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+
+}
+
+/*Desktop*/
+@media (max-width: 1199px) and (min-width: 992px){
+	#slide ul li .caption{
+		position: relative;
+		width: 100%;
+		top:-85px;
+		text-align: center;
+		z-index: 1;
+		color: white;
+	}
+
+	#slide ul li .caption h1{
+		background: rgba(0,0,0,.5);
+		padding: 5px 0;
+	}
+
+	#slide ul li .caption h3{
+		background: rgba(0,0,0,.5);
+		padding-bottom: 10px;
+	}
+
+	#indicator{
+		position: relative;
+		width: 100%;
+		height: 10px;
+		margin: auto;
+		text-align: center;
+		top: -70px;
+	}
+
+	#indicator li{
+		display: inline-block;
+		margin: 0px 5px;
+		cursor: pointer;
+		opacity: .5;
+		color:black;
+		text-shadow: 0px 0px 5px #333;
+	}
+
+	#indicator li:first-child{
+		opacity: 1;
+	}
+
+	#left{
+		position: absolute;
+		top: 40%;
+		left:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+
+	#right{
+		position: absolute;
+		top: 40%;
+		right:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+/*Tablets*/
+@media (max-width: 991px) and (min-width: 768px){
+	#slide ul li .caption{
+		position: relative;
+		width: 100%;
+		top:-85px;
+		text-align: center;
+		z-index: 1;
+		color: white;
+	}
+
+	#slide ul li .caption h1{
+		background: rgba(0,0,0,.5);
+		padding: 5px 0;
+	}
+
+	#slide ul li .caption h3{
+		background: rgba(0,0,0,.5);
+		padding-bottom: 10px;
+	}
+	
+	#indicator{
+		position: relative;
+		width: 100%;
+		height: 10px;
+		margin: auto;
+		text-align: center;
+		top: -70px;
+	}
+
+	#indicator li{
+		display: inline-block;
+		margin: 0px 5px;
+		cursor: pointer;
+		opacity: .5;
+		color:black;
+		text-shadow: 0px 0px 5px #333;
+	}
+
+	#indicator li:first-child{
+		opacity: 1;
+	}
+
+	#left{
+		position: absolute;
+		top: 35%;
+		left:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+
+	#right{
+		position: absolute;
+		top: 35%;
+		right:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+
+}
+
+/*Phones*/
+@media (max-width: 767px){
+	#slide ul li .caption{
+		display: none;
+	}
+
+	#indicator{
+		display: none;
+	}
+
+
+	#left{
+		position: absolute;
+		top: 37%;
+		left:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+
+	#right{
+		position: absolute;
+		top: 37%;
+		right:2%;
+		font-size: 2em;
+		color: white;
+		cursor: pointer;
+	}
+}
